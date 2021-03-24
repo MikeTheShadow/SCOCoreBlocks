@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "scocoreblocks:block/mud_brick",
+    "down": "scocoreblocks:block/mud_brick",
+    "up": "scocoreblocks:block/mud_brick",
+    "east": "scocoreblocks:block/mud_brick",
+    "west": "scocoreblocks:block/mud_brick",
+    "north": "scocoreblocks:block/mud_brick",
+    "south": "scocoreblocks:block/mud_brick"
+  }
+}
+

@@ -97,10 +97,10 @@ def main():
         create_file("templates/blockstates.json", assets + "blockstates/", block_id)
         # Edit model block
         print("Editing models/block...")
-        create_file("templates/blockstates.json", assets + "models/block/", block_id)
+        create_file("templates/model_block.json", assets + "models/block/", block_id)
         # Edit model item
         print("Editing mdoels/item...")
-        create_file("templates/blockstates.json", assets + "models/item/", block_id)
+        create_file("templates/model_item.json", assets + "models/item/", block_id)
         # Add block texture
         print("Copying file...")
         copyfile(block_id + ".png", assets + "textures/block/" + block_id + ".png")

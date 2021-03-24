@@ -1,6 +1,8 @@
 package com.miketheshadow.scocoreblocks;
 
+import com.miketheshadow.scocoreblocks.blocks.BlockOfCobalt;
 import com.miketheshadow.scocoreblocks.blocks.FirstBlock;
+import com.miketheshadow.scocoreblocks.blocks.MudBrick;
 import com.miketheshadow.scocoreblocks.setup.ClientProxy;
 import com.miketheshadow.scocoreblocks.setup.IProxy;
 import com.miketheshadow.scocoreblocks.setup.ModSetup;
@@ -67,6 +69,8 @@ public class SCOCoreBlocks
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().register(new FirstBlock());
             //block-reg
+			event.getRegistry().register(new MudBrick());
+			event.getRegistry().register(new BlockOfCobalt());
 
         }
         @SubscribeEvent
@@ -75,6 +79,8 @@ public class SCOCoreBlocks
                     .group(ModSetup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.firstBlock, properties).setRegistryName("firstblock"));
             //item-reg
+			event.getRegistry().register(new BlockItem(ModBlocks.mudBrick, properties).setRegistryName("mud_brick"));
+			event.getRegistry().register(new BlockItem(ModBlocks.blockOfCobalt, properties).setRegistryName("block_cobalt"));
 
         }
     }
